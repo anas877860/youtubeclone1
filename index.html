@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="header">
+        <div class="header-left">
+            <i class="material-icons">menu</i>
+            <img src="https://lh3.googleusercontent.com/3zkP2SYe7yYoKKe47bsNe44yTgb4Ukh__rBbwXwgkjNRe4PykGG409ozBxzxkrubV7zHKjfxq6y9ShogWtMBMPyB3jiNps91LoNH8A=s500"
+                alt="">
+        </div>
+        <div class="header-search">
+            <form action="">
+                <input type="text" placeholder="Search">
+                <button><i class="material-icons">search</i></button>
+            </form>
+        </div>
+        <div class="header-icons">
+            <i class="material-icons">videocam</i>
+            <i class="material-icons">apps</i>
+            <i class="material-icons">notifications</i>
+            <i class="material-icons">account_circle</i>
+        </div>
+    </div>
+    <div class="mainbody">
+        <div class="sidebar">
+            <div class="sidebar-categories">
+                <div class="sidebar-category">
+                    <i class="material-icons">home</i>
+                    <span>Home</span>
+                </div>
+
+
+                <div class="sidebar-category">
+                    <i class="material-icons">local_fire_department</i>
+                    <span>Trending</span>
+                </div>
+
+
+                <div class="sidebar-category">
+                    <i class="material-icons">subscriptions</i>
+                    <span>Subscriptions</span>
+                </div>
+
+            </div>
+            <hr />
+            <div class="sidebar-categories">
+                <div class="sidebar-category">
+                    <i class="material-icons">library_add_check</i>
+                    <span>Library</span>
+                </div>
+
+
+                <div class="sidebar-category">
+                    <i class="material-icons">history</i>
+                    <span>History</span>
+                </div>
+
+
+                <div class="sidebar-category">
+                    <i class="material-icons">play_arrow</i>
+                    <span>Your Videos</span>
+                </div>
+
+
+                <div class="sidebar-category">
+                    <i class="material-icons">watch_later</i>
+                    <span>Watch Later</span>
+                </div>
+
+
+                <div class="sidebar-category">
+                    <i class="material-icons">thumb_up</i>
+                    <span>Liked Videos</span>
+                </div>
+
+            </div>
+            <hr />
+        </div>
+        <div class="videos">
+            <h1>Recommended</h1>
+            <div class="videos-container">
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="https://i.ytimg.com/vi/pDmEYRhyusU/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCmOTdXR87c73e29M-oVwgOTxuu9Q" alt="">
+                    </div>
+                    <div class="video-details">
+                        <div class="author">
+                            <img src="data:image/png;base64,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"
+                                alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Part 1 | Introduction To Programming | C Programming Malayalam Tutorial</h3>
+                            <a href="">Brototype Malayalam
+                            </a>
+                            <span>10M Views . 10 Months Ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="https://i.ytimg.com/vi/eqeyXMsipPw/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDFR1FvCdaxc8mrebY0Cty19wLpVQ"
+                            alt="">
+                    </div>
+                    <div class="video-details">
+                        <div class="author">
+                            <img src="data:image/png;base64,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"
+                                alt="">
+                        </div>
+                        <div class="title">
+                            <h3>How To Get a High Paying IT Job?</h3>
+                            <a href="">Brototype Malayalam</a>
+                            <span>9M Views . 9 Months Ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="https://i.ytimg.com/vi/2TfED5L4c3M/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAptaL1WQDpf_09O1QSx0XHfOygxQ" alt="">
+                    </div>
+                    <div class="video-details">
+                        <div class="author">
+                            <img src="data:image/png;base64,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"
+                                alt="">
+                        </div>
+                        <div class="title">
+                            <h3>Part 1 | Web Designing Malayalam Tutorial</h3>
+                            <a href="">Brototype Malayalam</a>
+                            <span>8M Views . 8 Months Ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="https://i.ytimg.com/vi/lLl5LKIsIT8/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBScPMOveUroUDoQK4ax98XQI-vqA" alt="">
+                    </div>
+                    <div class="video-details">
+                        <div class="author">
+                            <img src="data:image/png;base64,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"
+                                alt="">
+                        </div>
+                        <div class="title">
+                            <h3>What is a Startup? | Common Mistakes Regarding Startups</h3>
+                            <a href="">Brototype Malayalam</a>
+                            <span>7M Views . 7 Months Ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="https://i.ytimg.com/vi/-wGc24R3_eM/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCDrCSFNihFVXO-Ch9zfBpocWlE5A" alt="">
+                    </div>
+                    <div class="video-details">
+                        <div class="author">
+                            <img src="data:image/png;base64,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"
+                                alt="">
+                        </div>
+                        <div class="title">
+                            <h3>Part 1 | Introduction to GIT | Date with Git | Git Malayalam Tutorial</h3>
+                            <a href="">Brototype Malayalam
+                            </a>
+                            <span>6M Views . 6 Months Ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="https://i.ytimg.com/vi/Va37c30zA-M/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAlg1Wh2zs0GjLceisOD0zgeUrQYA" alt="">
+                    </div>
+                    <div class="video-details">
+                        <div class="author">
+                            <img src="data:image/png;base64,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"
+                                alt="">
+                        </div>
+                        <div class="title">
+                            <h3>Part 1 | Introduction to Python | Python Malayalam Tutorial For Beginners |Python Coding Challenge</h3>
+                            <a href="">Brototype Malayalam</a>
+                            <span>5M Views . 5 Months Ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="https://i.ytimg.com/vi/Y_cI7L6818U/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLADemRTRI1q-moNjp0bpChRctdCZQ" alt="">
+                    </div>
+                    <div class="video-details">
+                        <div class="author">
+                            <img src="data:image/png;base64,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"
+                                alt="">
+                        </div>
+                        <div class="title">
+                            <h3>Part 1 | Introduction to Web Development | Web Development Challenge in Malayalam | Crossroads</h3>
+                            <a href="">Brototype Malayalam</a>
+                            <span>4M Views . 4 Months Ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="https://i.ytimg.com/vi/SeFji-HeTOM/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDAiKVUKp18OXs9op2xXD4k2cZY9w" alt="">
+                    </div>
+                    <div class="video-details">
+                        <div class="author">
+                            <img src="data:image/png;base64,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"
+                                alt="">
+                        </div>
+                        <div class="title">
+                            <h3>Part 1 | Data Structure in Malayalam | Introduction | Crossroads</h3>
+                            <a href="">Brototype Malayalam</a>
+                            <span>3M Views . 3 Months Ago</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="https://i.ytimg.com/vi/jSWwKABiFik/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDJVMCUTj5T3uNkwTFT7Es1Qq69_g" alt="">
+                    </div>
+                    <div class="video-details">
+                        <div class="author">
+                            <img src="data:image/png;base64,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"
+                                alt="">
+                        </div>
+                        <div class="title">
+                            <h3>Part 1 | Introduction to React | React Malayalam Tutorial | React Challenge</h3>
+                            <a href="">Brototype Malayalam</a>
+                            <span>2M Views . 2 Months Ago</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="https://i.ytimg.com/vi/M3ni_jDqY6E/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLD5RhC400ycRpqU0NAJEEbLgBJFzQ" alt="">
+                    </div>
+                    <div class="video-details">
+                        <div class="author">
+                            <img src="data:image/png;base64,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"
+                                alt="">
+                        </div>
+                        <div class="title">
+                            <h3>Part 1 | Flutter Malayalam Tutorial Series | Mobile Development Malayalam</h3>
+                            <a href="">Brototype Malayalam</a>
+                            <span>1M Views . 1 Months Ago</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="https://i.ytimg.com/vi/g8WMoafNGHk/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLD6ZEuCe_wljrJEHel6eokaK6DNSQ" alt="">
+                    </div>
+                    <div class="video-details">
+                        <div class="author">
+                            <img src="data:image/png;base64,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"
+                                alt="">
+                        </div>
+                        <div class="title">
+                            <h3>Is IT Industry Losing Opportunities? | Q&A | Brototype</h3>
+                            <a href="">Brototype Malayalam</a>
+                            <span>3M Views . 3 Months Ago</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="https://i.ytimg.com/vi/cc0Hf_I3ykY/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDASVsvDQKTpk1OfM_oaSEQaclMPA" alt="">
+                    </div>
+                    <div class="video-details">
+                        <div class="author">
+                            <img src="data:image/png;base64,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"
+                                alt="">
+                        </div>
+                        <div class="title">
+                            <h3>Live Web Hosting | Nginx AWS Cloud Digital Ocean</h3>
+                            <a href="">Brototype Malayalam</a>
+                            <span>4M Views . 5 Months Ago</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="https://i.ytimg.com/vi/sqn2bM9SgPE/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBZJPih6dy-X-0vDyW3YGyErusxNg" alt="">
+                    </div>
+                    <div class="video-details">
+                        <div class="author">
+                            <img src="data:image/png;base64,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"
+                                alt="">
+                        </div>
+                        <div class="title">
+                            <h3>How to Get Placed at Linkedin | Success Story of Jeswin Cyriac</h3>
+                            <a href="">Brototype Malayalam</a>
+                            <span>2M Views . 2 Months Ago</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="https://i.ytimg.com/vi/ULWPm0sXgt4/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBQsIJDQ4H7QrZrGI5kMETd5QDvlA" alt="">
+                    </div>
+                    <div class="video-details">
+                        <div class="author">
+                            <img src="data:image/png;base64,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"
+                                alt="">
+                        </div>
+                        <div class="title">
+                            <h3>Techie turned Millionaire by age 25 | Story of Liyas Thomas | Full Interview</h3>
+                            <a href="">Brototype Malayalam</a>
+                            <span>1M Views . 4 Months Ago</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="https://i.ytimg.com/vi/sEAyggVL9tw/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAKsszgNJ_szmfJOJB4qu9A_v3M2w" alt="">
+                    </div>
+                    <div class="video-details">
+                        <div class="author">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAh1BMVEUAAAABAQH///8sLCz8/PwFBQUWFhb5+fn19fU3NzckJCQJCQknJyeNjY3Nzc1AQEDe3t5cXFzW1tYfHx/h4eESEhIbGxvLy8uHh4c7OzsvLy9ERESkpKTGxsZZWVmSkpJLS0tpaWm8vLx8fHzr6+uwsLCcnJy/v7+qqqpkZGRzc3NQUFB/f3/nVZTqAAAIe0lEQVR4nO1c61rqyBJNN2k6kAAhIQgEEDQgou//fGdVdSLO2eyjMjOe2n61hJBrd626dVV+GEV/Pgw+vf+3EP8ElIg0KBFpUCLSoESkQYlIgxKRBiUiDUpEGpSINCgRaVAi0qBEpEGJSIMSkQYlIg1KRBqUiDQoEWlQItKgRKRBiUiDEpEGJSINSkQalIg0KBFpUCLSoESkQYlIgxKRBiUiDUpEGpSINCgRaVAi0qBEpEGJSIMSkQYlIg0fEDHGtD9fw7tnvwn/jkUubL4N/5uIM183Rkvhm3n8uzEiybVIscbdaJXvxOeC/aaRJcUI33FDoDjz3UnrAyKgkFb9Pj5fROWkuVY0tT6OPW1sYr3FJk6sDafoF7D4o09MN7W3DOlZsHGO1eFoQ5PRKWzDhr5kbs4K3bmgAheu8dNpezFqD64mkQ/SbwQiLSAk4O1ly1J7+o27m4gdnfGZu0xA35RdzYUj00rdCUeHLnBM+TecCwShhDTcF9iYyF2R9OMYmZKwPvZMJQ6S+5aWZ1v4lqgNNuLdpAyh4mh6lti1fIIB6EIgQL8uKP2d/kwrPBvURe2mM+jXLYKnpjaJm7zJizwvZrOGhZ/hCH+zvEnizlqzw/G43jQtkySLqqwclsNsiJ/hcO4oh5e75/10WbHPlGWW9XB1WJbl0JXD3pwMBkHnuDt1wyGuZ1lZGaaymuMOGqrspeYGIniGLDKg/ZS9od6AycR0Oanaz4hZclwFR0l3d+xofhid33vkE67VD559cnYsXTRPgomDIuYLGzdZMFER20O0ZPvSxfEeA09bh8Dzvnd9nf2AiIu2kGsQRV0kRumGjt2bnw8bRMSOWaZ87p58zmfmMbhaEOgpco/JW3jNVvRYiDROF9V8Zu29I68D/6RnBpew8wvjtkEhrKPe9YT4iawFwU2baWiICVmoy0c4uYvtngzEh0TnARIiRuoRMPZxg5/F2dUJRBkfFyeIbPPKLRaL+yPGPtFtqXuOvR9gmP4ssSMXDcD64bg+HvDrJyREclxgHHzm0dVo/8i1oueYXcutxsV4jeXB9JN4CRrp+fG8I+GrPHccnZOXFYUua9NnYbqRtQWfjDaQf4rc5fprqPbMQQsHiuuQxtKxtQeoZ2FtM48whrUr0t4EufwIt7BNadr8cFPWMpx+yZWWZNxn6L1q7BJX+uQbLMXDggbPCsh3ILO5GcVIyKFEhIOzhEDrMF8/h7bJgmaJsScmLCUwbFKbeRNbkIyYCLvQU2w30ZTyYMTpzJjrxc8niUBHtNINIHLP2yWkhWES+0hCnHYk/Zqz8Qs58Cn+byLO7EBz1yrz6O2sot1JR4T89IEkXse2IHFXnoIBEWnWNs4diDRlu8T+3nk+QQSCVoPVck6TIoiXmKti76X8fwIvk+YcjPdkksUVi+xxteIwc8hncUz6vRCh0xkGXCTevtAVcs9VcDmPTAEhktf9/rw/n/tc/N1ukahbjFaYa0ke9rgYvZCpq2YVeFGeOVCaPv9CxHAyqtoFe4vQKOn68mIRQ4aiBHvgRX4F8w4w1PwR975S1uqw+lsWaZdTDrR9zMEeUhRmfU1WyLuIHKq3TvTQ4y+uFYj0w5JOHu9LGnHwRoTGmzfsvaxuRKQtxuMip+W3jLbdihTHA3c11j/tWlE2ur9fZFQJnewgSMn0npMEsZ+6gteFV/K10W9cq2zXZCJVBnHfLEIRjPPxMZQrq66Ow6JTU3lhm2k9AepQav4Niwxo3DXNuMcxV3KcHqGmLbnGPRdeNc1y+IWIi3a4/BwqpvTkbUFu9s612Lv6lBBCQTbAsHlRFOPNooQJ4IxIyiH9XjfIV9IvsCY5zzEH+9MpozB9ghZpghRrV75nOzVXLELZekMtmuOoPnDEvXMt0soQ9WfNBmGnoxhJwzI87crQ6LfvNT6ufqHnARV5cK1X8mwkJVrZIdmJQuUFVVJFs6dVmXJ+hPos+hHu9kc2LpyjRYNXcZRTaV3A02tOX6ScOuiZhprzITekvI5ciipaEOdt/3JT9YvheWU3XR2OWfo5ESMiyYoKlcL6EfcOLpRffUSLTbKgNjhcwVV4mmEZ9Anil3qAAy8jjl0rCp0xhihxuAszDd5yZdAmnt0cHh4e8C2vO9eHZfwW0y95z4XW4kiTQ16k4REpD2FsF67t3IzJNtyPDCOuxO5pgQMNHNV513nZBxrKkUV8XDNjopKWuFSH2EetFQ8uQb0NvQ+jd1vWMpT5tugbuHforZ5RE/kXNAo1PL0Z4GxNPUqxH1Lwp5NRw6L6LHjzuSgOafsGNX0d02KTHLamTT0DNDVLYkHNCtUuRTFhj4x6eZ4PLx70UuQzaogI2c0lCmb3qGd94j23CNBN4rlxh7FwIQ5dI/VeiQ8tPFwrVBNQPVkjbftuNFtz15V9beYL6zQnqzStwnlyWfe+p61SUE2d4/C/wSIm9Oxx+2WBfWjT2+6czydvDXDXcbSuxZO67oWDCb05R7ZhOzgXWth2SQx2Ct39XyqRsPTyHq6lt7S6ht2za9BaPw07vu3afaBiyTbBkz31Rq2aTdQpOeoa9JDQ/jpPeAHhQp/Tluvvr7v2pcX1PvdjIpGpizvUCndjoLhDTwJseBv2CbiBbynCPvbuxv3IdQQ68d/KnDQo3bQvFky7tneU3hLshUv3uijcfdtblD8FSkQalIg0KBFpUCLSoESkQYlIgxKRBiUiDUpEGpSINCgRaVAi0qBEpEGJSIMSkQYlIg1KRBqUiDQoEWlQItKgRKRBiUiDEpEGJSINSkQalIg0KBFpUCLSoESkQYlIgxKRBiUiDUpEGpSINCgRaVAi0qBEpEGJSIMSkQYlIhAgcss/XZUEYmF+jkWiP98i5gdZ5McEu/kRwR7+IwmI9H4Gtv8Bk89lhQIjNZoAAAAASUVORK5CYII="
+                                alt="">
+                        </div>
+                        <div class="title">
+                            <h3>Web Development For Babies</h3>
+                            <a href="">Brototype Malayalam</a>
+                            <span>12M Views . 6 Months Ago</span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+
+</body>
+
+</html>
